@@ -58,23 +58,27 @@ php artisan db:seed
 - ユーザー登録：http://localhost:8082/register
 - phpMyAdmin: http://localhost:8081
 
-※上記URLはDockerでローカル環境を起動した場合のものです。
+※上記URLはDocker環境起動後にアクセス可能です。
 
 ---
 
 ## 機能一覧
 
-- お問い合わせフォーム送信
-- 管理画面表示
-- ユーザー登録機能
+- お問い合わせフォーム入力 / 送信
+- バリデーション機能
+- 管理画面での一覧表示
+- 検索機能
+- ユーザー登録 / ログイン、ログアウト機能
 
 ## ER図
 
-![ER図](./er-diagram.png)
+![ER図](er-diagram.png)
 
 ### ■ テーブル構造
 
 #### categories
+
+お問い合わせの種類を管理するテーブルです。
 
 - id (PK)
 - content
@@ -82,6 +86,8 @@ php artisan db:seed
 - updated_at
 
 #### contacts
+
+お問い合わせ内容を管理するテーブルです。
 
 - id (PK)
 - category_id (FK)
@@ -97,6 +103,8 @@ php artisan db:seed
 - updated_at
 
 #### users
+
+管理者ユーザーを管理するテーブルです。
 
 - id (PK)
 - name
