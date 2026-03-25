@@ -70,7 +70,7 @@ php artisan db:seed
 
 ## ER図
 
-![ER図](./er-daigram.png)
+![ER図](./er-diagram.png)
 
 ### ■ テーブル構造
 
