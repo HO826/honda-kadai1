@@ -1,0 +1,95 @@
+.confirm {
+    width: 800px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.confirm__content {
+    width: 100%;
+}
+
+.confirm__heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.confirm__title {
+    font-size: 24px;
+}
+
+.confirm-table__inner {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+.confirm-table__inner tr:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+
+.confirm-table__header {
+    width: 250px;
+    background: #8b7969;
+    color: #fff;
+    text-align: left;
+    border-right: 1px solid #ddd;
+}
+
+.confirm-table__header,
+.confirm-table__text {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.confirm-table__text {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.confirm-table__text input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+}
+
+.name-group {
+    display: flex;
+    gap: 8px;
+}
+
+.tel-group {
+    display: flex;
+    gap: 0;
+}
+
+.confirm__button {
+    margin-top: 30px;
+}
+
+.confirm__btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.confirm__btn-send {
+    padding: 10px 40px;
+    background: #8b7969;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.confirm__btn-send:hover {
+    opacity: 0.9;
+}
+
+.confirm__link {
+    background: none;
+    border: none;
+    color: #8b7969;
+    text-decoration: underline;
+    cursor: pointer;
+}

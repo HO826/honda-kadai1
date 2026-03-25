@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    background: #f8f6f4;;
+}
+
+.header {
+    background: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+}
+
+.header__logo {
+    font-size: 24px;
+}
+
+nav {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header__btn {
+    padding: 5px 15px;
+    border: 1px solid #c5b9b0;
+    color: #c5b9b0;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+main {
+    padding: 20px 0;
+}

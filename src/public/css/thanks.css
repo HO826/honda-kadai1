@@ -1,0 +1,39 @@
+.thanks {
+    position: relative;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.thanks__bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 120px;
+    font-weight: bold;
+    color: rgba(139, 121, 105, 0.15);
+    white-space: nowrap;
+    z-index: 0;
+}
+
+.thanks__message {
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 30px;
+    z-index: 1;
+}
+
+.thanks__btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #8B7969;
+    color: #fff;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.thanks__btn:hover {
+    opacity: 0.9;
+}
