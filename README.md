@@ -52,11 +52,11 @@ php artisan db:seed
 - MySQL 8.0.45
 - nginx 1.21.1
 
-## 開発環境
+## URL
 
-- お問い合わせ画面：http://localhost:8082/
+- お問い合わせ画面：http://localhost:8082
 - ユーザー登録：http://localhost:8082/register
-- phpMyAdmin: http://localhost:8081/
+- phpMyAdmin: http://localhost:8081
 
 ※上記URLはDockerでローカル環境を起動した場合のものです。
 
@@ -70,7 +70,7 @@ php artisan db:seed
 
 ## ER図
 
-![ER図](./課題1ER.png)
+![ER図](./er-daigram.png)
 
 ### ■ テーブル構造
 
