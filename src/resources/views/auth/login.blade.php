@@ -4,11 +4,11 @@
 <link rel="stylesheet" href="{{ asset('css/register.css') }}">
 @endsection
 
-@section('content')
-
 @section('header-btn')
     <a href="/register" class="header__btn">register</a>
 @endsection
+
+@section('content')
 
 <h2 class="form__title">Login</h2>
 

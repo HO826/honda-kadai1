@@ -17,7 +17,19 @@ class ContactController extends Controller
 
     public function confirm(ContactRequest $request)
     {
-        $inputs = $request->all();
+        $inputs = $request->only([
+            'last_name',
+            'first_name',
+            'gender',
+            'email',
+            'tel1',
+            'tel2',
+            'tel3',
+            'address',
+            'building',
+            'category_id',
+            'detail'
+        ]);
         $category = Category::find($inputs['category_id']);
 
         return view('contact.confirm', compact('inputs', 'category'));
@@ -25,10 +37,21 @@ class ContactController extends Controller
 
     public function store(Request $request)
     {
-        $data = $request->all();
+        $data = $request->only([
+            'last_name',
+            'first_name',
+            'gender',
+            'email',
+            'tel1',
+            'tel2',
+            'tel3',
+            'address',
+            'building',
+            'category_id',
+            'detail'
+        ]);
         $data['tel'] = $data['tel1'] . $data['tel2'] . $data['tel3'];
-        $category = Category::find($data['category_id']);
-        $data['category'] = $category->content;
+        unset($data['tel1'], $data['tel2'], $data['tel3']);
         Contact::create($data);
         return view('contact.thanks');
     }
