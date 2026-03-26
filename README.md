@@ -20,12 +20,14 @@ docker-compose up -d --build
 
 ```bash
 docker-compose exec php bash
+cd src
 composer install
 ```
 
 ### .env設定
 
 ```bash
+cd src
 cp .env.example .env
 ```
 
